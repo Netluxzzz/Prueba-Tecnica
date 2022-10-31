@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "635fc237c9b96718dad293b8"
+  },
+  "name": "Xavi",
+  "surname": "Hernández Creus",
+  "birthdate": "25/01/1980",
+  "phonenumber": "679847985",
+  "salary": 10000000,
+  "recordCreationDate": "Mon Oct 31 2022 13:40:23 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc266c9b96718dad293ba"
+  },
+  "name": "Carlo",
+  "surname": "Ancelotti",
+  "birthdate": "10/06/1959",
+  "phonenumber": "613248745",
+  "salary": 40000000,
+  "recordCreationDate": "Mon Oct 31 2022 13:41:10 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc28bc9b96718dad293bc"
+  },
+  "name": "Diego Pablo",
+  "surname": "Simeone",
+  "birthdate": "28/04/1970",
+  "phonenumber": "722147894",
+  "salary": 20000000,
+  "recordCreationDate": "Mon Oct 31 2022 13:41:47 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+}]

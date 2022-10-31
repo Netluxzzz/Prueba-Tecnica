@@ -1,0 +1,591 @@
+{
+	"info": {
+		"_postman_id": "c810690f-05dd-4d71-a051-62657b31fba3",
+		"name": "Cloud District League",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24143053"
+	},
+	"item": [
+		{
+			"name": "Jugadores",
+			"item": [
+				{
+					"name": "Obtenter todos los jugadores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/players",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un jugador",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/players/635fc041c9b96718dad293a6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"players",
+								"635fc041c9b96718dad293a6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir un jugador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nabil\",\r\n    \"surname\": \"Fekir\",\r\n    \"birthdate\": \"18/007/1993\",\r\n    \"phonenumber\": \"732465784\",\r\n    \"salary\": 3600000,\r\n    \"rol\": \"Delantero\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/players/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"players",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un jugador",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nabil Mohammed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/players/635fc321c9b96718dad293bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"players",
+								"635fc321c9b96718dad293bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un jugador",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/players/635fc321c9b96718dad293bf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"players",
+								"635fc321c9b96718dad293bf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener los jugadores que pertenecen a un equipo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Antoine\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/players/club/635fbfe6c9b96718dad293a0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"players",
+								"club",
+								"635fbfe6c9b96718dad293a0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dar de alta un jugador en un club",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"club\": \"635fbfe6c9b96718dad293a0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/players/635fc0f0c9b96718dad293ac/register/club",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"players",
+								"635fc0f0c9b96718dad293ac",
+								"register",
+								"club"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dar de baja un jugador en un club",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/players/635fc0f0c9b96718dad293ac/unregister/club",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"players",
+								"635fc0f0c9b96718dad293ac",
+								"unregister",
+								"club"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Entrenadores",
+			"item": [
+				{
+					"name": "Obtenter todos los entrenadores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/managers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"managers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un entrenador",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/managers/635e704b2795fa88d24676a7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"managers",
+								"635e704b2795fa88d24676a7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir un entrenador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pep\",\r\n    \"surname\": \"Guardiola\",\r\n    \"birthdate\": \"18/01/1971\",\r\n    \"phonenumber\": \"671497831\",\r\n    \"salary\": 23000000\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/managers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"managers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un entrenador",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pepe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/managers/635f93852e94da221f270753",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"managers",
+								"635f93852e94da221f270753"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un entrenador",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/managers/635edcc62394b386bcff5151",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"managers",
+								"635edcc62394b386bcff5151"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener los entrenadores que pertenecen a un equipo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Xavi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/managers/club/635d29bbd68915e11b5220e9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"managers",
+								"club",
+								"635d29bbd68915e11b5220e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dar de alta un entrenador en un club",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"club\": \"635d310d20ad406085835141\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/managers/635edcb42394b386bcff514d/register/club",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"managers",
+								"635edcb42394b386bcff514d",
+								"register",
+								"club"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dar de baja un entrenador en un club",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"club\": \"635d29bbd68915e11b5220e9\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/managers/635edcb42394b386bcff514d/unregister/club",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"managers",
+								"635edcb42394b386bcff514d",
+								"unregister",
+								"club"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clubes",
+			"item": [
+				{
+					"name": "Obtenter todos los clubes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/clubs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"clubs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener un club",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/clubs/635d29bbd68915e11b5220e9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"clubs",
+								"635d29bbd68915e11b5220e9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Añadir un club",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Borussia Dortmund\",\r\n    \"budget\": 80000000\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/clubs/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"clubs",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un club",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Borussia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3500/api/clubs/635fb6e279495e0acacd6eb0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"clubs",
+								"635fb6e279495e0acacd6eb0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un club",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3500/api/clubs/635fb6e279495e0acacd6eb0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3500",
+							"path": [
+								"api",
+								"clubs",
+								"635fb6e279495e0acacd6eb0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3500/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

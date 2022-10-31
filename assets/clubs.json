@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "635fbfe6c9b96718dad293a0"
+  },
+  "name": "Atlético de Madrid",
+  "budget": 282000000,
+  "recordCreationDate": "Mon Oct 31 2022 13:30:30 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fbff7c9b96718dad293a2"
+  },
+  "name": "Real Madrid",
+  "budget": 769000000,
+  "recordCreationDate": "Mon Oct 31 2022 13:30:47 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc00ac9b96718dad293a4"
+  },
+  "name": "FC Barcelona",
+  "budget": 855000000,
+  "recordCreationDate": "Mon Oct 31 2022 13:31:06 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+}]

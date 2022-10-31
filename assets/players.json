@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "635fc041c9b96718dad293a6"
+  },
+  "name": "Karim",
+  "surname": "Benzema",
+  "birthdate": "19/12/1987",
+  "phonenumber": "678412497",
+  "salary": 8000000,
+  "rol": "Delantero",
+  "recordCreationDate": "Mon Oct 31 2022 13:32:01 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc083c9b96718dad293a8"
+  },
+  "name": "Vinícius José",
+  "surname": "Paixaõ de Oliveira Junior",
+  "birthdate": "12/07/2000",
+  "phonenumber": "678415478",
+  "salary": 3200000,
+  "rol": "Delantero",
+  "recordCreationDate": "Mon Oct 31 2022 13:33:07 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc0b8c9b96718dad293aa"
+  },
+  "name": "Federico",
+  "surname": "Valverde",
+  "birthdate": "22/07/1998",
+  "phonenumber": "612478457",
+  "salary": 4120000,
+  "rol": "Centrocampista",
+  "recordCreationDate": "Mon Oct 31 2022 13:34:00 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc0f0c9b96718dad293ac"
+  },
+  "name": "Antoine",
+  "surname": "Griezmann",
+  "birthdate": "21/03/1997",
+  "phonenumber": "674871549",
+  "salary": 11000000,
+  "rol": "Delantero",
+  "recordCreationDate": "Mon Oct 31 2022 13:34:56 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0,
+  "club": ""
+},{
+  "_id": {
+    "$oid": "635fc124c9b96718dad293ae"
+  },
+  "name": "Jan",
+  "surname": "Oblak",
+  "birthdate": "07/01/1993",
+  "phonenumber": "671457931",
+  "salary": 10000000,
+  "rol": "Guardameta",
+  "recordCreationDate": "Mon Oct 31 2022 13:35:48 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc151c9b96718dad293b0"
+  },
+  "name": "Marcos",
+  "surname": "Llorente",
+  "birthdate": "30/01/1995",
+  "phonenumber": "654987124",
+  "salary": 2500000,
+  "rol": "Centrocampista",
+  "recordCreationDate": "Mon Oct 31 2022 13:36:33 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc180c9b96718dad293b2"
+  },
+  "name": "Robert",
+  "surname": "Lewandoski",
+  "birthdate": "21/08/1988",
+  "phonenumber": "711457861",
+  "salary": 23000000,
+  "rol": "Delantero",
+  "recordCreationDate": "Mon Oct 31 2022 13:37:20 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc1cec9b96718dad293b4"
+  },
+  "name": "Pablo Martín",
+  "surname": "Páez Gavira",
+  "birthdate": "05/08/2004",
+  "phonenumber": "614875497",
+  "salary": 100000,
+  "rol": "Centrocampista",
+  "recordCreationDate": "Mon Oct 31 2022 13:38:38 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "635fc201c9b96718dad293b6"
+  },
+  "name": "Pedro",
+  "surname": "González López",
+  "birthdate": "25/11/2002",
+  "phonenumber": "678491327",
+  "salary": 3500000,
+  "rol": "Centrocampista",
+  "recordCreationDate": "Mon Oct 31 2022 13:39:29 GMT+0100 (hora estándar de Europa central)",
+  "__v": 0
+}]
